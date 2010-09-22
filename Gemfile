@@ -7,6 +7,12 @@ gem 'rails', '3.0.0'
 
 gem 'pg'
 
+gem 'nifty-generators'
+
+# Use unicorn as the web server
+gem 'mongrel'
+
+
 # Use unicorn as the web server
 # gem 'unicorn'
 

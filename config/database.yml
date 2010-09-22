@@ -8,19 +8,19 @@
 #   gem install pg
 #       Choose the win32 build.
 #       Install PostgreSQL and put its /bin directory on your path.
+
 development:
   adapter: postgresql
   encoding: unicode
   database: consultoriamedica_development
   pool: 5
   username: consultoriamedica
-  password:
-
+  password: consultoriamedica
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
   # domain sockets, so uncomment these lines.
-  #host: localhost
-  #port: 5432
+  host: localhost
+  port: 5432
 
   # Schema search path. The server defaults to $user,public
   #schema_search_path: myapp,sharedapp,public
@@ -40,7 +40,10 @@ test:
   database: consultoriamedica_test
   pool: 5
   username: consultoriamedica
-  password:
+  password: consultoriamedica
+  host: localhost
+  port: 5432
+
 
 production:
   adapter: postgresql
@@ -48,4 +51,7 @@ production:
   database: consultoriamedica_production
   pool: 5
   username: consultoriamedica
-  password:
+  password: consultoriamedica
+  host: localhost
+  port: 5432
+
